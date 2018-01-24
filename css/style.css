@@ -3995,7 +3995,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   text-align:center;
   border-radius:50%;
   background:#ffea00;
-  color:#800000;
+  color:#020080;
 }
 .shop-add-btn {
   display:block;
@@ -5927,7 +5927,8 @@ select.input-border {
 }
 
 .bg-gray-light {background-color:#f5f5f5;}
-.bg-gray {background-color:#eee;}
+.bg-blue{background-color:#020080;}
+.bg-gray {background-color:#a0a0a0;}
 .bg-gray-dark, .header.no-transparent .header-wrapper.bg-gray-dark{	background-color:#303036;}
 .bg-black {background-color:#101010;}
 .bg-white {background-color:#fff;}
