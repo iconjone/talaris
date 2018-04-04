@@ -271,7 +271,7 @@
                 window.onload = function() {
 available();
 paypal.minicart.render();
-                
+
                 }
                 function available(){
 															console.log("refreshing");
@@ -300,7 +300,10 @@ paypal.minicart.render();
                           html+= '<h3><a class="font-norm a-inv" href="shoes/'+brand+'/'+sneaker+'/'+sneaker+'.html">' + sneaker+'</a></h3>'
                           html+= '</div>'
                           html+= '<div class="shop-price-cont text-center">'
+                          if(sale==='n')
                           html+= '<strong>$'+price+'</strong>'
+                          if(sale!='n')
+                            html+= '<del>$'+sale+'</del>&nbsp;&nbsp;'+'<strong>$'+price+'</strong>' 
                           html+= '</div>'
                           html+= '</div>'
                           html+= '  '
