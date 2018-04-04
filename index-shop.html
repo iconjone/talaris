@@ -259,13 +259,19 @@
                 </div>
                 <script src="../../../js/minicart.min.js"></script>
                 <script>
+
+                  paypal.minicart.render();
+                  var i =  paypal.minicart.cart;
+                   console.log(i._items.length);
+                   document.getElementById("cartNum").textContent=i._items.length;
+                  paypal.minicart.view.hide()
+
+                </script>
+                <script>
                 window.onload = function() {
 available();
 paypal.minicart.render();
-                   var i =  paypal.minicart.cart;
-                    console.log(i._items.length);
-                    document.getElementById("cartNum").textContent=i._items.length;
-                   paypal.minicart.view.hide()
+                
                 }
                 function available(){
 															console.log("refreshing");
